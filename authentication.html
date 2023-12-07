@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/CustomEase.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="/STYLE/authentication.css">
+  <title>Login/Signup</title>
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="AboveNavBarDiv">
+    <div class="AboveNavBarDiv1">
+        <div>
+            <img src="https://www.jing.fm/clipimg/full/24-247863_clipart-info-location-icon-png-white.png"
+                alt="Location">
+            <!-- <span>xyz Street, Bangalore, India</span> -->
+            <span>Globe Walker, Bangalore, India</span>
+        </div>
+
+        <div>
+            <img src="https://www.vippng.com/png/full/79-790533_contact-phone-icon-white-color.png" alt="call">
+            <span>+91 9235372727</span>
+        </div>
+
+        <div>
+            <img src="https://logodix.com/logo/510999.png" alt="mail">
+            <span>info@globewalker.com</span>
+        </div>
+
+    </div>
+
+
+    <div class="AboveNavBarDiv2">
+        <img src="https://breathflo.co/wp-content/uploads/2019/01/iconfinder_Asset_24_2190912.png" alt=""
+            class="twitterImg">
+        <img src="https://www.shareicon.net/data/2017/05/09/885750_line_512x512.png" alt="facebook"
+            class="facebookImg">
+        <img src="https://www.shareicon.net/data/2015/09/28/108616_media_512x512.png" alt="linkedIn"
+            class="linkedInImg">
+        <img src="https://cdn2.iconfinder.com/data/icons/instagram-new/512/instagram-round-liner-512.png"
+            alt="Insta" class="instaImg">
+        <img src="https://icon-library.com/images/youtube-icon-white-transparent/youtube-icon-white-transparent-28.jpg"
+            alt="youTube" class="youTubeImg">
+    </div>
+</div>
+<!--Header Section Start  -->
+<div id="header">
+    <!-- Nav-Bar Section Start -->
+    <!-- <nav id="navbar"> -->
+    <nav id="navbar1">
+        <div id="log">
+            Globe Walker
+        </div>
+        <div id="navOptions">
+            <a href="/index.html"> Home</a>
+            <a href="">About Us</a>
+            <a href="/hotels.html">Hotels</a>
+            <a href="holiday.html">Holidays</a>
+            <a href="cart.html">Cart</a>
+            <a id="login_signup" class="login_signup" href="/authentication.html">Login/Signup</a>
+            <!-- <select id="login_signup" class="login_signup" href="/authentication.html"><img src="./IMAGES/auth.png" alt=""></select> -->
+
+    </nav>
+    <hr>
+    <!-- Nav-Bar Section End -->
+</div>
+<!--Header Section End  -->
+  <section class="user">
+    <div class="user_options-container">
+      <div class="user_options-text">
+        <div class="user_options-unregistered">
+          <h2 class="user_unregistered-title">Don't have an account?</h2>
+          <p class="user_unregistered-text">Create now!</p>
+          <button class="user_unregistered-signup" id="signup-button">Sign up</button>
+        </div>
+
+        <div class="user_options-registered">
+          <h2 class="user_registered-title">Already have a account!</h2>
+          <p class="user_registered-text">Get started..</p>
+          <button class="user_registered-login" id="login-button">Login</button>
+        </div>
+      </div>
+
+      <div class="user_options-forms" id="user_options-forms">
+        <div class="user_forms-login">
+          <h2 class="forms_title">Login</h2>
+          <form class="forms_form">
+            <fieldset class="forms_fieldset">
+              <div class="forms_field">
+                <input type="email" id="login_email" placeholder="Email" class="forms_field-input" required autofocus />
+              </div>
+              <div class="forms_field">
+                <input type="password" id="login_password" placeholder="Password" class="forms_field-input" required />
+              </div>
+            </fieldset>
+            <div class="forms_buttons">
+              <button type="button" class="forms_buttons-forgot">Forgot password?</button>
+              <input type="submit" value="Log In" class="forms_buttons-action" id="login_btn">
+            </div>
+          </form>
+        </div>
+        <div class="user_forms-signup">
+          <h2 class="forms_title">Sign Up</h2>
+          <form class="forms_form">
+            <fieldset class="forms_fieldset">
+              <div class="forms_field">
+                <input type="text" placeholder="Full Name" id="fullName" class="forms_field-input" required />
+              </div>
+              <div class="forms_field">
+                <input type="email" placeholder="Email" id="signup_email" class="forms_field-input" required />
+              </div>
+              <div class="forms_field">
+                <input type="password" placeholder="Password" id="signup_password" class="forms_field-input" required />
+              </div>
+            </fieldset>
+            <div class="forms_buttons">
+              <input type="submit" value="Sign up" class="forms_buttons-action" id="signup_btn">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
+<script src="/SCRIPT/authentication.js"></script>
